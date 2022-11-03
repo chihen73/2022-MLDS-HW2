@@ -2,8 +2,8 @@
 
 ### Source
 
-  - [Slide](https://docs.google.com/presentation/d/1JW27_5HXYZhqWmgvDhtXBaFTOfksO_dS/edit#slide=id.p1)
-  - [Dashboard](https://docs.google.com/spreadsheets/d/1cjhQewnXT2IbmYkGXRYNC5PlGRafcbVprCjgSFyDAaU/edit?pli=1#gid=0)
+  - [Slide](https://docs.google.com/presentation/d/1ihPO_2WvHyrAHinLvGPXRs8jX8ED3Hri/edit?usp=sharing&ouid=112246576290315533201&rtpof=true&sd=true)
+  - [Dashboard](https://docs.google.com/spreadsheets/d/1Rx6OV64Br8EHrZpbjMa86rm9a8vsngNSjB12s4pO940/edit?usp=sharing)
 
 ### Rules
 
