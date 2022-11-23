@@ -8,20 +8,21 @@
 
 ## 數據前處理
 將單日電量數據plot繪圖(橫軸為時間vs.縱軸為電量)，綠色折線表示產電，藍色為用電。繪製如下圖1/1以及6/21分別50戶用戶的電力情形。
-<div align="center">
-<img src="https://user-images.githubusercontent.com/117910213/203577457-284c1239-5c66-4e13-b78f-14c76f44bb10.png" width = "500" height = "500" alt="1/1電量數據" >
-</div>
-
+![1to25_Jan1](https://user-images.githubusercontent.com/117910213/203584383-feaddea1-9d97-4a71-8851-366d8fdbe693.png)
 <center>1/1產電及用電情形(用戶No.0~No.24)</center>
 
-<div align="center">
-<img src="https://user-images.githubusercontent.com/117910213/203577465-60292f09-9321-442c-97da-fa2f2c935d30.png" width = "500" height = "500" alt="1/1電量數據" >
-</div>
+![26to50_Jan1](https://user-images.githubusercontent.com/117910213/203584408-bce1d542-ee03-4336-82ee-b04f30597c2f.png)
 <center>1/1產電及用電情形(用戶No.25~No.49)</center>
 
+![1to25_Jun21](https://user-images.githubusercontent.com/117910213/203583711-0da20865-281f-4913-9308-6721a6ac9dfa.png)
+<center>6/21產電及用電情形(用戶No.0~No.24)</center>
+
+![26to50_Jun21](https://user-images.githubusercontent.com/117910213/203583715-ce765cf2-c9c6-4f64-a613-f558d557c090.png)
+<center>6/21產電及用電情形(用戶No.25~No.49)</center>
+
 ## 數據前處理
-1.	
-2.	藉由觀察，50戶用戶單日產電量之產電高峰皆落在PM12:00左右，且上升及下降趨勢皆近似，惟用電量特徵則有大致群組特徵，故下一步試圖將類似用電特徵之用戶歸類並做regression。
-3.	標準差在統計上用以衡量一組數據的離散程度，依據每個數據點與平均值的差異程度而定。在此選用標準差及平均值來表達電能產量與用量的波動程度與量。
-4.	高斯函數
+2. 藉由觀察，50戶用戶單日產電量之產電高峰皆落在PM12:00左右，且上升及下降趨勢皆近似，惟用電量特徵則有大致群組特徵，故下一步試圖將類似用電特徵之用戶歸類並做regression。
+3. 標準差在統計上用以衡量一組數據的離散程度，依據每個數據點與平均值的差異程度而定。在此選用標準差及平均值來表達電能產量與用量的波動程度與量。
+4. 繪製每戶資料之「平均值vs.標準差」圖，可以看出數據點的分別集中情形，在此使用 `K-means` 做clustering並指定分2群。
+5. 將同群合併為同一變數並以高斯函數做fitting，此步驟得出兩個函數(fitting model)
 
